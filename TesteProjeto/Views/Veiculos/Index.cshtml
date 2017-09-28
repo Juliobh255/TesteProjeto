@@ -1,0 +1,35 @@
+﻿@model IEnumerable<TesteProjeto.Models.CadastroVeiculo>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+
+
+
+<table class="table">
+    <tr>
+        
+        <th>
+            @Html.DisplayNameFor(model => model.Codigo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Nome)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Placa)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TipoVeiculo)
+        </th>
+        <th></th>
+    </tr>
+
+
+
+
+</table>
+<br />
+<p style="margin-top:50%">
+    @Html.ActionLink("Criar novo cadastro", "Create")
+</p>
